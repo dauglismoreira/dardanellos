@@ -1,0 +1,55 @@
+.full-menu{
+    transform:translate(0,-100%);
+    
+    @apply
+    inset-0 fixed w-full h-full z-50 bg-dardaGray7 transition pt-32 flex flex-col justify-between
+}
+
+.full-menu.active{
+    transform:translate(0,0);
+}
+
+.full-menu .full-menu-close{
+    @apply
+    absolute top-[25px] right-[20px] z-50 text-darda1 text-[28px]
+}
+
+.full-menu .full-menu-detail{
+    @apply
+    absolute w-full bottom-0
+}
+
+.full-menu .full-menu-detail img{
+    @apply
+    w-full
+}
+
+.full-menu .full-menu-items{
+    @apply
+    relative z-30 pt-16 px-8 flex flex-col items-center justify-center gap-20
+}
+
+.full-menu .full-menu-items ul{
+    @apply
+    text-center flex flex-col gap-16
+}
+
+.full-menu .full-menu-items ul li{
+    @apply
+    text-[28px] text-darda1
+}
+
+.full-menu .full-menu-social{
+    @apply
+    pb-16 relative z-30
+}
+
+.full-menu .full-menu-social ul{
+    @apply
+    flex justify-between px-8 max-w-[480px] mx-auto
+}
+
+.full-menu .full-menu-social ul li{
+    @apply
+    text-dardaGray1
+}

@@ -1,0 +1,76 @@
+.enterprise .enterprise-banner{
+    @apply
+    h-[800px] w-full
+}
+
+.enterprise .enterprise-banner img{
+    @apply
+    w-full h-full object-cover
+}
+
+.enterprise .enterprise-content{
+    @apply
+    max-w-[1260px] mx-auto pt-[50px]
+}
+
+.enterprise .enterprise-content label{
+    @apply
+    text-darda2 text-sm mb-[50px] block
+}
+
+.enterprise .enterprise-content h1{
+    @apply
+    text-darda6 mb-[35px]
+}
+
+.enterprise .enterprise-content p{
+    @apply
+    text-dardaGray5 mb-[30px] text-base
+}
+
+.enterprise .enterprise-content .enterprise-skills{
+    @apply
+    flex gap-4 items-center mb-[50px]
+}
+
+.enterprise .enterprise-content .enterprise-skills span{
+    @apply
+    flex gap-2 items-center border px-4 py-2 rounded-lg border-dardaGray2 text-dardaGray5
+}
+
+
+.enterprise .enterprise-content .enterprise-description h3,
+.enterprise .enterprise-content .enterprise-different h5{
+    @apply
+    text-dardaGray4 text-[20px] mb-[42px]
+}
+
+.enterprise .enterprise-content .enterprise-description p{
+    @apply
+    text-dardaGray5 max-w-[700px] text-lg mb-[100px]
+}
+
+.enterprise .enterprise-content .enterprise-different h5{
+    @apply
+    font-bold mb-[30px]
+}
+
+.enterprise .enterprise-content .enterprise-different ul{
+    @apply
+    mb-[100px]
+}
+
+.enterprise .enterprise-content .enterprise-different li{
+    @apply
+    text-dardaGray5 max-w-[700px] text-lg mb-[25px]
+}
+
+.enterprise .enterprise-content .enterprise-high-image{
+    @apply
+    h-[785px] w-full mb-[100px]
+}
+
+.enterprise .enterprise-content .enterprise-high-image img{
+    @apply
+    w-full h-full object-cover
+}

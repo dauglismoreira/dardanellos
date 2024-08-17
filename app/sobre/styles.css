@@ -1,0 +1,236 @@
+.about-page{
+    @apply
+    relative overflow-x-hidden
+}
+
+.about-page .about-detail-1{
+    @apply
+    absolute -right-[100px] lg:-right-[260px] top-[25%] lg:top-[45%] -translate-y-2/4 w-[240px] lg:w-auto
+}
+
+.about-page .about-detail-2{
+    @apply
+    absolute top-[45%] -translate-y-2/4
+}
+
+.about-page .about-detail-3{
+    @apply
+    absolute -left-[80px] lg:-left-[360px] top-[12%] lg:top-[27%] -translate-y-2/4 w-[240px] lg:w-auto z-10 lg:z-0
+}
+
+.about-page.video-section{
+    background: rgb(102,64,45);
+    background: linear-gradient(0deg, rgba(102,64,45,1) 50%, rgba(36,36,36,1) 50%);
+}
+
+.about-page .about-section-1{
+    @apply
+    flex max-w-[944px] mx-auto gap-[40px] lg:pt-[138px] flex-col-reverse lg:flex-row px-4 lg:px-0
+}
+
+.about-page .about-section-1 h1{
+    @apply
+    text-darda1 leading-10 lg:mb-[82px] py-8 lg:py-0 w-[240px] md:w-auto
+}
+
+.about-page .about-section-1 .section-1-content .text{
+    @apply
+    py-8 lg:py-0
+}
+
+.about-page .about-section-1 .section-1-content .text p{
+    @apply
+    text-dardaGray1 mb-12 lg:mb-8 text-lg leading-9
+}
+
+.about-page .about-section-1 .section-1-content .text h2,
+.about-page .about-section-1 .section-1-content .text h3,
+.about-page .about-section-1 .section-1-content .text h4,
+.about-page .about-section-1 .section-1-content .text h5{
+    @apply
+    text-dardaGray1 mb-12 lg:mb-8 text-lg
+}
+
+.about-page .about-section-1 .section-1-image{
+    @apply
+    lg:mt-[90px]
+}
+
+@media(min-width:1024px){
+    .about-page .about-section-1 .section-1-image,
+    .about-page .about-section-1 .section-1-content{
+        flex:1;
+    }
+}
+
+.about-page .about-section-1 .section-1-image img{
+    @apply
+    w-full h-full object-cover h-[484px] lg:h-[628px]
+}
+
+.about-page .about-section-2{
+    @apply
+    pt-0 lg:pt-[60px] max-w-[944px] mx-auto px-4 lg:px-0
+}
+
+.about-page .about-section-2 .section-2-title{
+    @apply
+    w-full border-b border-darda3 pb-4 flex gap-4 text-dardaGray1 font-bold text-lg
+}
+
+.about-page .about-section-2 .section-2-title img{
+    @apply
+    hidden lg:block
+}
+
+.about-page .about-section-2 .section-2-body{
+    @apply
+    pt-[20px] pb-[40px] pl-4 lg:pl-[160px]
+}
+
+.about-page .about-section-2 .section-2-body p{
+    @apply
+    text-lg text-dardaGray1
+}
+
+.about-page .about-section-3{
+    @apply
+    pt-8 lg:pt-[134px] pb-16 lg:pb-[182px] max-w-[944px] mx-auto px-4 lg:px-0
+}
+
+.about-page .about-section-3 h3{
+    @apply
+    text-darda1
+}
+
+.about-page .about-section-3 .section-3-content{
+    @apply
+    flex lg:pl-[160px] lg:gap-[40px] lg:items-center flex-col lg:flex-row
+}
+
+.about-page .about-section-3 .section-3-content .section-3-item{
+    @apply
+    flex items-center gap-4 pt-6 lg:pt-[64px] border-b lg:border-none border-darda1 pb-4 lg:pb-0 w-fit lg:w-auto
+}
+
+.about-page .about-section-3 .section-3-content .section-3-item img{
+    @apply
+    hidden lg:block
+}
+
+.about-page .about-section-3 .section-3-content .section-3-item span{
+    @apply
+    text-dardaGray1 font-bold text-lg
+}
+
+.about-page .about-section-4{
+    @apply
+    max-w-[944px] mx-auto px-8 lg:px-0
+}
+
+.about-page .about-section-4 .video,
+.about-page .about-section-4 .video iframe{
+    @apply
+    h-[192px] sm:h-[334px] md:h-[424px] lg:h-[531px] w-full relative z-20
+}
+
+.about-page .about-section-5{
+    @apply
+    max-w-[944px] mx-auto pt-12 lg:pt-[193px] flex items-center gap-[50px] flex-col lg:flex-row px-4 lg:px-0
+}
+
+.about-page .about-section-5 .section-5-image{
+    @apply
+    h-[461px] lg:min-h-[628px] relative mt-8 lg:mt-0
+}
+
+@media(min-width:1024px){
+    .about-page .about-section-5 .section-5-content,
+    .about-page .about-section-5 .section-5-image{
+        flex:1;
+    }
+}
+
+.about-page .about-section-5 .section-5-image .image-detail{
+    @apply
+    h-[20px] w-[245px] lg:w-[345px] object-cover
+}
+
+.about-page .about-section-5 .section-5-image .image-detail:nth-child(1){
+    @apply
+    absolute right-0 -top-[20px]
+}
+
+.about-page .about-section-5 .section-5-image .image{
+    @apply
+    h-[461px] lg:h-[628px] w-full object-cover
+}
+
+.about-page .about-section-5 .section-5-content h3{
+    @apply
+    text-darda1 lg:leading-10 mb-8 lg:mb-[68px]
+}
+
+.about-page .about-section-5 .section-5-content .text p{
+    @apply
+    text-dardaGray1 text-lg leading-8
+}
+
+.about-page .about-section-6{
+    @apply
+    max-w-[944px] mx-auto pt-20 lg:pt-[114px] px-4 lg:px-0
+}
+
+.about-page .about-section-6 h3{
+    @apply
+    text-darda1 mb-8 lg:mb-[88px]
+}
+
+.about-page .about-section-6 .text p{
+    @apply
+    text-dardaGray1 text-lg leading-8 mb-[40px]
+}
+
+.about-page .about-section-7{
+    @apply
+    max-w-[1760px] mx-auto lg:pt-[70px] px-4 2xl:px-0
+}
+
+.about-page .about-section-7 .section-7-title{
+    @apply
+    max-w-[944px] mx-auto
+}
+
+.about-page .about-section-7 .section-7-title h3{
+    @apply
+    text-darda1 pb-12 lg:pb-[80px] max-w-[540px]
+}
+
+.about-page .about-section-7 .section-7-content{
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+    @apply
+    max-w-[1260px] mx-auto flex md:grid flex-col gap-4 
+}
+
+@media(max-width:560px){
+    .about-page .about-section-7 .section-7-content a{
+        width:100%;
+    }
+}
+
+.about-page .about-section-7 .section-7-action .view-more{
+    @apply
+    py-20 lg:py-[122px] w-full max-w-[1760px] px-4 flex items-center gap-8 justify-center mx-auto
+}
+
+.about-page .about-section-7 .section-7-action .view-more .view-more-circle{
+    @apply
+    min-w-[140px] min-h-[140px] max-w-[140px] max-h-[140px] border border-dardaGray1 rounded-full flex items-center justify-center cursor-pointer hover:bg-dardaGray1
+    text-dardaGray1 hover:text-darda5 text-lg font-bold px-4 text-center leading-5
+}
+
+.about-page .about-section-7 .section-7-action .view-more span{
+    @apply
+    h-px w-2/4 bg-dardaGray2 hidden lg:block
+}

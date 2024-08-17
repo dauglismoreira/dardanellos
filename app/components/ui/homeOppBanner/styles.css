@@ -1,0 +1,29 @@
+.home-opp-banner{
+    @apply
+    bg-right lg:bg-center bg-cover object-cover h-[300px] lg:h-[400px] w-full flex flex-col items-center justify-center
+}
+
+.home-opp-banner .home-opp-banner-content{
+    @apply
+    text-center leading-7 lg:leading-10 w-full px-4
+}
+
+.home-opp-banner .home-opp-banner-content h3{
+    @apply
+    max-w-[260px] lg:max-w-[460px] mx-auto
+}
+
+.home-opp-banner .home-opp-banner-content button{
+    @apply
+    mt-8
+}
+
+.home-opp-banner .home-opp-banner-content a{
+    @apply
+    min-w-full
+}
+
+.home-opp-banner .home-opp-banner-content h3{
+    @apply
+    text-darda1
+}

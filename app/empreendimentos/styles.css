@@ -1,0 +1,10 @@
+.enterprise-list-page .enterprise-list-title,
+.enterprise-list-page .enterprise-list-content{
+    @apply
+    max-w-[1260px] mx-auto
+}
+
+.enterprise-list-page .enterprise-list-title{
+    @apply
+    text-darda3 py-8 border-b border-darda2 mb-12 mt-12
+}

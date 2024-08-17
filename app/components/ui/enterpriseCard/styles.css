@@ -1,0 +1,62 @@
+.enterprise-card{
+    @apply
+    w-full max-w-[624px] h-[408px] lg:h-[682px] hover:shadow-lg transition
+}
+
+.enterprise-card .enterprise-card-cover{
+    @apply
+    h-[212px] lg:h-[388px] w-full relative
+}
+
+.enterprise-card .enterprise-card-cover .enterprise-card-image{
+    @apply
+    w-full h-full object-cover
+}
+
+.enterprise-card .enterprise-card-cover .enterprise-card-tag{
+    @apply
+    absolute top-[20px] left-[20px] bg-darda5 h-[48px] px-4 flex items-center justify-center text-dardaGray1 uppercase font-light text-sm
+}
+
+.enterprise-card .enterprise-card-info{
+    @apply
+    h-[196px] lg:h-[294px] p-4 lg:px-8 lg:py-8 bg-white flex flex-col justify-between rounded-b-xl
+}
+
+.enterprise-card .enterprise-card-info .enterprise-card-title{
+
+}
+
+.enterprise-card .enterprise-card-info .enterprise-card-title h2{
+    @apply
+    text-darda6 mb-2
+}
+
+.enterprise-card .enterprise-card-info .enterprise-card-title p{
+    @apply
+    text-dardaGray5 text-sm lg:text-base
+}
+
+.enterprise-card .enterprise-card-info .enterprise-card-skills{
+    @apply
+    flex gap-4 items-center
+}
+
+.enterprise-card .enterprise-card-info .enterprise-card-skills span{
+    @apply
+    flex gap-2 items-center border px-4 py-2 rounded-lg border-dardaGray2 text-dardaGray5
+}
+
+.enterprise-card .enterprise-card-info .enterprise-card-button{
+    @apply
+    flex items-center gap-2 text-darda5 font-bold text-base lg:text-lg
+}
+
+.enterprise-card:hover  .enterprise-card-info .enterprise-card-button{
+    @apply
+    gap-4
+}
+
+.enterprise-card:hover{
+    transform:translate(0,-10px);
+}

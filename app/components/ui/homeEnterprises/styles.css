@@ -1,0 +1,33 @@
+.home-enterprise .home-enterprise-content{
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+
+    @apply
+    w-full max-w-[1260px] mx-auto flex md:grid flex-col gap-4 px-4 2xl:px-0 items-center
+}
+
+@media(max-width:500px){
+    .home-enterprise .home-enterprise-content{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
+
+.home-enterprise .home-enterprise-title{
+    @apply
+    py-[74px] lg:py-[174px] text-center text-darda3
+}
+
+.home-enterprise .view-more{
+    @apply
+    py-20 lg:py-[122px] w-full max-w-[1760px] px-4 flex items-center gap-8 justify-center mx-auto
+}
+
+.home-enterprise .view-more .view-more-circle{
+    @apply
+    min-w-[140px] min-h-[140px] max-w-[140px] max-h-[140px] border border-darda5 rounded-full flex items-center justify-center cursor-pointer hover:bg-darda5
+    text-darda5 hover:text-dardaGray1 text-lg font-bold px-4 text-center leading-5
+}
+
+.home-enterprise .view-more span{
+    @apply
+    h-px w-2/4 bg-dardaGray2 hidden lg:block
+}

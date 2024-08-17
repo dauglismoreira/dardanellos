@@ -1,0 +1,102 @@
+.footer{
+    @apply
+    bg-darda6
+}
+
+.footer .footer-content{
+    @apply
+    w-full max-w-[1260px]  mx-auto px-4 2xl:px-0
+}
+
+.footer .footer-content .footer-content-slogan{
+    @apply
+    text-center w-full flex items-center justify-center flex-col pt-[58px] lg:pt-[78px] pb-12 lg:pb-[90px] gap-8 lg:gap-[72px]
+}
+
+.footer .footer-content .footer-content-slogan h5{
+    @apply
+    text-[20px] lg:text-[36px] text-dardaGray1 max-w-[180px] lg:max-w-[280px]
+}
+
+.footer .footer-content .footer-content-slogan img{
+    @apply
+    w-[28px] lg:w-auto
+}
+
+.footer .footer-content .footer-content-nav{
+    @apply
+    flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left
+}
+
+.footer .footer-content .footer-contact-address{
+    flex:2;
+    @apply
+    flex gap-4 lg:gap-12 flex-col lg:flex-row items-center lg:items-start text-center lg:text-left mb-12 lg:mb-0
+}
+
+.footer .footer-content .footer-content-nav h3{
+    @apply
+    text-base text-darda2 mb-[20px] lg:mb-[30px]
+}
+
+.footer .footer-content .footer-content-nav li{
+    @apply
+    text-base text-dardaGray1
+}
+
+.footer .footer-content .footer-contact-menu ul a{
+    @apply
+    hover:underline text-dardaGray1
+}
+
+.footer .footer-content .footer-contact-address li{
+    @apply
+    text-lg
+}
+
+.footer .footer-content .footer-contact-address p{
+    @apply
+    text-lg text-dardaGray1 max-w-[280px]
+}
+
+.footer .footer-content .footer-contact-address .col-2{
+    @apply
+    lg:mt-[80px]
+}
+
+.footer .footer-content .footer-contact-menu li{
+    @apply
+    mb-[10px]
+}
+
+.footer .footer-content .footer-contact-menu{
+    flex:1;
+    @apply
+    flex pb-[46px] gap-12 flex-col lg:flex-row
+}
+
+.footer .footer-right{
+    @apply
+    border-t border-dardaGray7 
+}
+
+.footer .footer-right .footer-right-content{
+    @apply
+    max-w-[1260px] flex justify-between items-center mx-auto pt-[28px] pb-[128px] lg:pb-[28px] flex-col-reverse lg:flex-row gap-2 lg:gap-0
+    px-4 2xl:px-0
+}
+
+.footer .footer-right .footer-right-content a{
+    @apply
+    text-dardaGray1 text-sm hover:underline
+}
+
+.footer .footer-right .footer-right-content p{
+    @apply
+    text-dardaGray1 text-sm
+}
+
+.footer .footer-detail{
+    @apply
+    bg-darda3 w-full h-[8px]
+}

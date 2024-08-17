@@ -1,0 +1,37 @@
+.enterprise-catalog{
+    @apply
+    pb-20
+}
+
+.enterprise-catalog .enterprise-filters{
+    @apply
+    flex gap-8 mb-8
+}
+
+.enterprise-catalog .enterprise-filters label{
+    @apply
+    text-darda6 uppercase font-bold
+}
+
+.enterprise-catalog .enterprise-filters .select-filter-container{
+    @apply
+    w-[300px] border rounded-lg border-darda4 pl-1 pr-2
+}
+
+.enterprise-catalog .enterprise-filters .select-filter-container select{
+    @apply
+    w-full bg-transparent outline-none h-[48px] text-lg
+}
+
+.enterprise-catalog .enterprise-result{
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+    @apply
+    max-w-[1260px] mx-auto flex md:grid flex-col gap-4 
+}
+
+@media(max-width:560px){
+    .enterprise-catalog .enterprise-result a{
+        width:100%;
+    }
+}

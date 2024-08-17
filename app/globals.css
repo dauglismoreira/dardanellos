@@ -2,32 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+h1{
+  @apply
+  font-bold text-[24px] lg:text-[36px]
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h2{
+  @apply
+  font-bold text-lg lg:text-[24px]
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h3{
+  @apply
+  font-bold text-[20px] lg:text-[36px]
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h4{
+  @apply
+  text-[20px] font-bold
+}
+
+label{
+  @apply
+  text-lg
+}
+
+li{
+  @apply
+  text-lg lg:text-base
+}
+
+p{
+  @apply
+  text-lg lg:text-base
+}
+
+body{
+  @apply
+  bg-dardaGray1
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: .5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #58372B;
+  outline: none;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }

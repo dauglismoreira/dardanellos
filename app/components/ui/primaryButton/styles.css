@@ -1,0 +1,4 @@
+.primary-button{
+    @apply
+    border px-4 h-[48px] rounded-lg w-full lg:w-auto font-bold
+}

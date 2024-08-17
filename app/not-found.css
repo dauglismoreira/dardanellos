@@ -1,0 +1,24 @@
+.not-found-container{
+    @apply
+    bg-darda4 flex items-center justify-center h-[80vh] flex-col gap-4 relative overflow-hidden px-4 lg:px-0
+}
+
+.not-found-container h1{
+    @apply
+    font-normal text-[48px] lg:text-[72px] text-darda1
+}
+
+.not-found-container p{
+    @apply
+    text-lg text-dardaGray1 -mt-4 text-center
+}
+
+.not-found-container a{
+    @apply
+    mt-12
+}
+
+.not-found-container .not-found-detail{
+    @apply
+    absolute w-[1400px] lg:w-full
+}

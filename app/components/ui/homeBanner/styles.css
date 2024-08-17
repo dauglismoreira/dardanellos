@@ -1,0 +1,39 @@
+.home-banner{
+    @apply
+    flex lg:flex-row flex-col-reverse lg:h-[800px]
+}
+
+.home-banner .home-banner-image{
+    @apply
+    w-full lg:w-2/4 h-[360px] lg:h-full
+}
+
+.home-banner .home-banner-image img{
+    @apply
+    w-full h-full object-cover
+}
+
+.home-banner .home-banner-body{
+    @apply
+    w-full lg:w-2/4 h-full flex lg:justify-end
+}
+
+.home-banner .home-banner-body .home-banner-content{
+    @apply
+    w-full max-w-[630px] h-full flex flex-col justify-center gap-16 lg:gap-[70px] relative p-4 2xl:p-0
+}
+
+.home-banner .home-banner-body .home-banner-content label{
+    @apply
+    text-darda2
+}
+
+.home-banner .home-banner-body .home-banner-content h1{
+    @apply
+    text-darda6 max-w-[500px]
+}
+
+.home-banner .to-scroll-action{
+    @apply
+    absolute bottom-[20px] hidden lg:flex gap-2 items-center cursor-pointer
+}

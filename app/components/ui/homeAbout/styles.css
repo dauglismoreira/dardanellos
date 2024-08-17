@@ -1,0 +1,57 @@
+.home-about .home-about-image{
+    @apply
+    h-[223px] lg:h-[1100px] w-full
+}
+
+.home-about .home-about-image img{
+    @apply
+    h-full w-full object-cover
+}
+
+.home-about .home-about-body{
+    @apply
+    bg-darda4 relative overflow-hidden pt-[80px] lg:pt-[110px] pb-[80px]
+}
+
+.home-about .home-about-content img{
+    @apply
+    w-[38px] lg:w-auto
+}
+
+.home-about .home-about-body .home-about-detail{
+    @apply
+    absolute -translate-y-3/4 top-0
+}
+
+.home-about .home-about-body .home-about-content{
+    @apply
+    z-10 relative flex max-w-[640px] mx-auto flex-col gap-[50px] lg:gap-[70px] justify-center text-center items-center
+}
+
+.home-about .home-about-body .home-about-content h3{
+    @apply
+    text-darda1
+}
+
+.home-about .home-about-body .home-about-content .text{
+    @apply
+    px-4 lg:px-0
+}
+
+.home-about .home-about-body .home-about-content .text h2,
+.home-about .home-about-body .home-about-content .text h3,
+.home-about .home-about-body .home-about-content .text h4,
+.home-about .home-about-body .home-about-content .text h5{
+    @apply
+    text-dardaGray1 mb-12 lg:mb-8 text-[20px]
+}
+
+.home-about .home-about-body .home-about-content .text p{
+    @apply
+    text-dardaGray1 mb-8 leading-7
+}
+
+.home-about .home-about-body .home-about-content a{
+    @apply
+    -mt-4 lg:mt-0 w-full px-4 lg:px-0 lg:w-auto
+}

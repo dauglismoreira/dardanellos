@@ -1,0 +1,49 @@
+.header{
+    @apply
+    h-[76px] lg:h-[120px] w-full fixed top-0 left-0 flex justify-between bg-dardaGray1 z-40 border-b border-dardaGray2 items-center px-4 2xl:px-0
+}
+
+.header .header-menu{
+    @apply
+    flex justify-end w-3/4
+}
+
+.header .header-menu .header-menu-content{
+    @apply
+    flex w-full max-w-[1100px] gap-8 xl:gap-24
+}
+
+.header .header-menu .header-menu-content img{
+    @apply
+    w-[226px] xl:w-[328px] h-[34px] xl:h-[48px]
+}
+
+.header .header-menu .header-menu-content ul{
+    @apply
+    items-center h-full gap-8 xl:gap-16
+}
+
+.header .header-menu .header-menu-content ul li{
+    @apply
+    text-darda5 text-lg hover:underline
+}
+
+.header .header-action{
+    @apply
+    items-center h-full justify-end gap-4 w-1/4 pr-2 xl:pr-8
+}
+
+.header .header-action span{
+    @apply
+    cursor-pointer text-[26px] text-darda5
+}
+
+.header .header-toggle{
+    @apply
+    w-[24px] h-[24px] flex flex-col justify-around cursor-pointer
+}
+
+.header .header-toggle span{
+    @apply
+    h-0.5 w-full bg-darda5 block
+}
