@@ -24,7 +24,7 @@ export const HomeAbout = ({data, image}:HomeAboutProps) => {
                     <span><img src="/icons/icon2.png"/></span>
                     <h3>{data.name_pt_br}</h3>
                     <div className="text" dangerouslySetInnerHTML={{__html: data.long_text_pt_br}}/>
-                    <PrimaryButton label="Conhecer mais" link="" style="border-dardaGray1 text-dardaGray1 hover:border-transparent hover:bg-darda5"/>
+                    <PrimaryButton  label={data.link_label_pt_br || ''} link={data.link || ''} style="border-dardaGray1 text-dardaGray1 hover:border-transparent hover:bg-darda5"/>
                 </div>
             </div>
         </div>
