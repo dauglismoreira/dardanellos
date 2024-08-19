@@ -26,7 +26,7 @@ export const HomeBanner = ({data, cta}:HomeBanner) => {
                     <label>{data.description_pt_br}</label>
                     <h1>{data.subtitle_pt_br}</h1>
 
-                    <PrimaryButton style="text-darda5 border-darda5 hover:bg-darda5 hover:text-dardaGray1" label="Conhecer mais" link=""/>
+                    <PrimaryButton style="text-darda5 border-darda5 hover:bg-darda5 hover:text-dardaGray1" label={data.link_label_pt_br || ''} link={data.link || ''}/>
 
                     <span className="to-scroll-action" onClick={handleScroll}>
                         <img src="/icons/icon1.png"/>
