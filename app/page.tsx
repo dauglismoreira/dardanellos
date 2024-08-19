@@ -4,6 +4,7 @@ import getStorageFile from '@/app/components/helpers/getStorageFile';
 import { HomeEnterprise } from "./components/ui/homeEnterprises";
 import { HomeAbout } from "./components/ui/homeAbout";
 import { HomeOppBanner } from "./components/ui/homeOppBanner";
+import { StickActions } from "./components/ui/stickActions";
 
 export async function generateMetadata() {
   const data = await  fetchData('page/1')
@@ -35,6 +36,8 @@ export default async function Home() {
      <HomeEnterprise data={data.page.components[2]} products={products.products.data}/>
      <HomeAbout image={data.page.components[3]} data={data.page.components[4]}/>
      <HomeOppBanner data={data.page.components[5]}/>
+
+     <StickActions/>
     </main>
   );
 }

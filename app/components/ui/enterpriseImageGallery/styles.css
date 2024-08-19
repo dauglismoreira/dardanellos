@@ -1,0 +1,39 @@
+.enterprise-image-gallery{
+    @apply
+    max-w-[784px] mt-[25px] pb-[25px] lg:mt-[50px] lg:pb-[50px]
+}
+
+.enterprise-image-gallery .enterprise-gallery-title{
+    @apply
+    text-dardaGray4 text-[20px] font-bold pb-8
+}
+
+.enterprise-image-gallery .enterprise-galley-wrap .gallery-image{
+    @apply
+    h-[212px] lg:h-[484px] w-full object-cover
+}
+
+.enterprise-image-gallery .enterprise-galley-wrap .legend{
+    @apply
+    text-sm text-dardaGray4 mt-4
+}
+
+.enterprise-gallery-navigation{
+    @apply
+    w-full flex justify-end -mt-[50px] relative z-10
+}
+
+.enterprise-gallery-navigation .arrows{
+    @apply
+    flex items-center gap-4 bg-dardaGray1
+}
+
+.enterprise-gallery-navigation .arrows span{
+    @apply
+    text-sm text-dardaGray4
+}
+
+.enterprise-gallery-navigation .arrows button{
+    @apply
+    text-darda3 text-[20px] cursor-pointer hover:scale-125
+}

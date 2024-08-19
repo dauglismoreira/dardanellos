@@ -1,0 +1,24 @@
+.progress-bar-container{
+    @apply
+    flex flex-col gap-2
+}
+
+.progress-bar-container .progress-bar{
+    @apply
+    w-full border border-darda2 relative
+}
+
+.progress-bar-container .progress-bar-label{
+    @apply
+    text-dardaGray4 text-lg
+}
+
+.progress-bar-container .progress-bar span{
+    @apply
+    bg-darda2 h-full block
+}
+
+.progress-bar-container .progress-bar small{
+    @apply
+    absolute top-2/4 -translate-y-2/4 left-[4px] text-dardaGray1 text-base
+}

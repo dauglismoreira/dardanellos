@@ -1,0 +1,39 @@
+.enterprise-plants-gallery .enterprise-gallery-title{
+    @apply
+    text-dardaGray4 text-[20px] font-bold pb-8
+}
+
+.enterprise-plants-gallery{
+    @apply
+    max-w-[784px]  mt-[50px] pb-[50px]
+}
+
+.enterprise-plants-gallery .enterprise-gallery-wrap{
+    @apply
+    flex flex-col gap-6
+}
+
+.enterprise-plants-gallery .enterprise-gallery-wrap .select-plant{
+    @apply
+    pl-1 pr-2 border border-darda3 rounded-lg h-[48px] w-full lg:max-w-[200px]
+}
+
+.enterprise-plants-gallery .enterprise-gallery-wrap .select-plant select{
+    @apply
+    w-full h-full bg-transparent text-darda3 outline-none font-bold
+}
+
+.enterprise-plants-gallery .enterprise-gallery-wrap .selected-plant{
+    @apply
+    flex flex-col items-center justify-center gap-2
+}
+
+.enterprise-plants-gallery .enterprise-gallery-wrap .selected-plant img{
+    @apply
+    w-full h-[364px] lg:h-[484px] object-cover
+}
+
+.enterprise-plants-gallery .enterprise-gallery-wrap .selected-plant span{
+    @apply
+    text-dardaGray4 text-sm cursor-pointer hover:text-darda3
+}

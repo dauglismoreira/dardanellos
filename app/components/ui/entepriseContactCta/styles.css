@@ -1,0 +1,51 @@
+.enteprise-contact-cta{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+    @apply
+    absolute top-[650px] bg-dardaGray1 z-40 p-8 pb-4 rounded-lg w-full max-w-[400px] flex flex-col gap-4 z-40 
+}
+
+.enteprise-contact-cta h2{
+    @apply
+    text-lg -mt-4
+}
+
+.enteprise-contact-cta.scroll{
+    @apply
+    fixed top-[208px]
+}
+
+.enteprise-contact-cta .tag{
+    margin-bottom:0px!important;
+
+    @apply
+    hidden lg:block
+}
+
+.enteprise-contact-cta .container-buttons button{
+    @apply
+    w-full
+}
+
+.enteprise-contact-cta .action-local{
+    @apply
+    absolute right-[20px] top-[20px] min-w-[40px] min-h-[40px] max-w-[40px] max-h-[40px] border border-dardaGray2 rounded-lg text-[24px]
+    text-darda3 items-center justify-center cursor-pointer hidden lg:flex
+}
+
+.enteprise-contact-cta .container-buttons{
+    @apply
+    flex flex-row lg:flex-col gap-4
+}
+
+@media(max-width:1024px){
+    .enteprise-contact-cta.mobile{
+        @apply
+        fixed bottom-0 left-0 w-full max-w-full top-auto gap-2
+    }
+
+    .enteprise-contact-cta .container-buttons a{
+        @apply
+        w-full
+    }
+}

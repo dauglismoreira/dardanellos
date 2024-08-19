@@ -2,7 +2,7 @@
     transform:translate(0,-100%);
 
     @apply
-    bg-dardaGray1 fixed w-full inset-0 h-full z-30 transition pt-[76px] lg:pt-[120px] px-4 2xl:px-0
+    bg-dardaGray1 fixed w-full inset-0 min-h-full z-30 transition pt-[76px] lg:pt-[120px] px-4 2xl:px-0 overflow-auto pb-20
 }
 
 .full-search.active{
@@ -40,4 +40,17 @@
 .full-search .total-results p{
     @apply
     text-darda2 text-lg
+}
+
+.full-search .enterprises-result{
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+    @apply
+    max-w-[1260px] mx-auto flex md:grid flex-col gap-4  mt-8 
+}
+
+@media(max-width:560px){
+    .full-search .enterprises-resultt a{
+        width:100%;
+    }
 }

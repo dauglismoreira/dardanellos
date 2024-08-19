@@ -19,7 +19,6 @@ export const EnterpriseCatalog = ({data}: any) => {
 
     useEffect(() => {
         if(data){
-            console.log(data)
             setEnterprises(data.products.data)
             if(data.tags && data.tags.length > 0){
                 setTags(data.tags)

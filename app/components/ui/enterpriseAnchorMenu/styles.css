@@ -1,0 +1,20 @@
+.enterprise-anchor-menu{
+    @apply
+    bg-dardaGray1 w-full h-[48px] fixed z-30 top-[76px] lg:top-[120px] left-0 border-b border-dardaGray2
+}
+
+.enterprise-anchor-menu ul{
+    @apply
+    w-full max-w-[1260px] mx-auto flex items-center h-full overflow-auto
+}
+
+.enterprise-anchor-menu ul li{
+    @apply
+    border-r border-dardaGray2 h-full flex items-center px-4 font-bold text-dardaGray4 cursor-pointer hover:bg-darda5 hover:text-dardaGray1
+    whitespace-nowrap
+}
+
+.enterprise-anchor-menu ul li:nth-child(1){
+    @apply
+    border-l
+}

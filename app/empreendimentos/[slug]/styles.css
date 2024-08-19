@@ -1,6 +1,11 @@
+.enterprise {
+    @apply
+    relative overflow-hidden
+}
+
 .enterprise .enterprise-banner{
     @apply
-    h-[800px] w-full
+    lg:h-[800px] h-[162px] w-full
 }
 
 .enterprise .enterprise-banner img{
@@ -10,17 +15,17 @@
 
 .enterprise .enterprise-content{
     @apply
-    max-w-[1260px] mx-auto pt-[50px]
+    max-w-[1260px] mx-auto pt-[30px] lg:pt-[50px] relative overflow-hidden px-4 2xl:px-0
 }
 
 .enterprise .enterprise-content label{
     @apply
-    text-darda2 text-sm mb-[50px] block
+    text-darda2 text-sm mb-[25px] lg:mb-[50px] block
 }
 
 .enterprise .enterprise-content h1{
     @apply
-    text-darda6 mb-[35px]
+    text-darda6 mb-[10px] lg:mb-[35px]
 }
 
 .enterprise .enterprise-content p{
@@ -30,7 +35,7 @@
 
 .enterprise .enterprise-content .enterprise-skills{
     @apply
-    flex gap-4 items-center mb-[50px]
+    flex gap-4 items-center  mt-[30px] mb-[60px] lg:my-[50px]
 }
 
 .enterprise .enterprise-content .enterprise-skills span{
@@ -45,9 +50,19 @@
     text-dardaGray4 text-[20px] mb-[42px]
 }
 
+.enterprise .enterprise-content .enterprise-description{
+    @apply
+    pb-[25px] lg:pb-[50px]
+}
+
+.enterprise .enterprise-content .enterprise-different{
+    @apply
+    lg:my-[50px]
+}
+
 .enterprise .enterprise-content .enterprise-description p{
     @apply
-    text-dardaGray5 max-w-[700px] text-lg mb-[100px]
+    text-dardaGray5 max-w-[700px] text-lg mb-[20px] lg:mb-[50px]
 }
 
 .enterprise .enterprise-content .enterprise-different h5{
@@ -57,7 +72,7 @@
 
 .enterprise .enterprise-content .enterprise-different ul{
     @apply
-    mb-[100px]
+    mb-[50px] lg:mb-[100px]
 }
 
 .enterprise .enterprise-content .enterprise-different li{
@@ -67,10 +82,98 @@
 
 .enterprise .enterprise-content .enterprise-high-image{
     @apply
-    h-[785px] w-full mb-[100px]
+    h-[242px] lg:h-[785px] w-full mb-[50px] lg:mb-[100px]
 }
 
 .enterprise .enterprise-content .enterprise-high-image img{
     @apply
     w-full h-full object-cover
+}
+
+.enterprise .enterprise-video,
+.enterprise .enterprise-address,
+.enterprise .enterprise-form{
+    @apply
+    max-w-[784px] mt-[25px] pb-[25px] lg:mt-[50px] lg:pb-[50px]
+}
+
+.enterprise .related-enterprises{
+    @apply
+    max-w-[1260px] my-[25px] lg:my-[50px]
+}
+
+.enterprise .enterprise-address .map,
+.enterprise .enterprise-address iframe{
+    @apply
+    w-full mt-4 h-[197px] lg:h-[441px]
+}
+
+.enterprise .enterprise-video .enterprise-video-title,
+.enterprise .enterprise-form .enterprise-form-title,
+.enterprise .related-enterprises .related-enterprises-title{
+    @apply
+    text-dardaGray4 text-[20px] font-bold pb-8
+}
+
+.enterprise .enterprise-video .enterprise-video-wraper .video,
+.enterprise .enterprise-video .enterprise-video-wraper .video iframe{
+    @apply
+    w-full h-[192px] lg:h-[517px]   
+}
+
+.enterprise .enterprise-address .enterprise-nearby{
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+    @apply
+    grid mt-4
+}
+
+.enterprise .enterprise-address .enterprise-nearby li{
+    @apply
+    text-dardaGray5
+}
+
+.enterprise .enterprise-form-wrapper,
+.enterprise .enterprise-form-wrapper iframe{
+    @apply
+    w-full h-[1700px] lg:h-[1300px]
+}
+
+.enterprise .related-enterprises .related-enterprises-wrapper{
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+    @apply
+    max-w-[1260px] mx-auto flex md:grid flex-col gap-4 
+}
+
+@media(max-width:560px){
+    .enterprise .related-enterprises .related-enterprises-wrapper a{
+        width:100%;
+    }
+}
+
+.enterprise .enteprise-detail{
+    @apply
+    absolute top-[12%] lg:top-[15%] -translate-y-2/4 -right-[500px]
+}
+
+.enterprise .enterprise-content{
+    @apply
+    relative
+}
+
+.enterprise .view-more{
+    @apply
+    py-20 lg:py-[122px] w-full max-w-[1760px] px-4 flex items-center gap-8 justify-center mx-auto
+}
+
+.enterprise .view-more .view-more-circle{
+    @apply
+    min-w-[140px] min-h-[140px] max-w-[140px] max-h-[140px] border border-darda5 rounded-full flex items-center justify-center cursor-pointer hover:bg-darda5
+    text-darda5 hover:text-dardaGray1 text-lg font-bold px-4 text-center leading-5
+}
+
+.enterprise .view-more span{
+    @apply
+    h-px w-2/4 bg-dardaGray2 hidden lg:block
 }

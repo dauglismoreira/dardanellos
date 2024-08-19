@@ -34,7 +34,7 @@ export const Header = ({data}:any) => {
         <div className="header">
             <div className="header-menu">
                 <div className="header-menu-content">
-                    <img src="/logo1.png"/>
+                    <Link href="/"><img src="/logo1.png"/></Link>
                     <ul className="hidden lg:flex">
                         <Link href={menu.find((conf:any) => conf.id === 1).link || ''}>
                             <li>{menu.find((conf:any) => conf.id === 1).name_pt_br}</li>

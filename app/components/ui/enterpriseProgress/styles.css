@@ -1,0 +1,37 @@
+.enterprise-progress{
+    @apply
+    max-w-[784px] mt-[25px] pb-[25px] lg:mt-[50px] lg:pb-[50px]
+}
+
+.enterprise-progress .enterprise-progress-title{
+    @apply
+    text-dardaGray4 text-[20px] font-bold pb-8
+}
+
+.enterprise-progress .progress-bar-wrapper{
+    @apply
+    flex gap-4 flex-wrap
+}
+
+.enterprise-progress .progress-bar-wrapper .progress-item{
+    width:calc(50% - .5rem);
+    
+    @apply
+    mb-2
+}
+
+@media(max-width:560px){
+    .enterprise-progress .progress-bar-wrapper .progress-item{
+        width:100%;
+    }
+}
+
+.enterprise-progress .progress-bar-high{
+    @apply
+    mb-2
+}
+
+.progress-gallery .progress-image{
+    @apply
+    h-[155px] lg:h-[116px] w-full object-cover
+}
