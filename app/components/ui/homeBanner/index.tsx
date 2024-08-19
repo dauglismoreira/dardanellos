@@ -24,7 +24,7 @@ export const HomeBanner = ({data, cta}:HomeBanner) => {
             <div className="home-banner-body">
                 <div className="home-banner-content">
                     <label>{data.description_pt_br}</label>
-                    <h1>{data.long_text_pt_br}</h1>
+                    <h1>{data.subtitle_pt_br}</h1>
 
                     <PrimaryButton style="text-darda5 border-darda5 hover:bg-darda5 hover:text-dardaGray1" label="Conhecer mais" link=""/>
 
