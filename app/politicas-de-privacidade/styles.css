@@ -6,7 +6,7 @@
 
 .policy-page .policy-title{
     @apply
-    border-b border-darda2 pt-12 lg:pt-20 pb-8 mb-12 mx-4 2xl:mx-0
+    border-b border-darda2 pt-12 lg:pt-20 pb-8 mb-12 px-4 2xl:px-0
 }
 
 .policy-page .policy-title h1{

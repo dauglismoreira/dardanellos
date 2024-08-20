@@ -31,7 +31,7 @@ export default async function Policy(){
                 <h1>Termos</h1>
             </div>
             <div className="policy-content">
-                {data.page.long_text_pt_br && <div className="text" dangerouslySetInnerHTML={{__html: data.page.long_text_pt_br}}/>}
+                {data.page.components[0].long_text_pt_br && <div className="text" dangerouslySetInnerHTML={{__html: data.page.components[0].long_text_pt_br}}/>}
             </div>
         </div>
     )
