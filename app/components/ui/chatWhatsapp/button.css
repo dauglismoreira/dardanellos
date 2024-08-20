@@ -1,0 +1,49 @@
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(2px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: translateX(4deg);
+    }
+    75% {
+        transform: rotate(-4deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.style-button {
+    animation: vibrate 0.3s ease 5 alternate;
+    animation-delay: 8s;
+
+    @apply
+    fixed z-50 right-4 bottom-8 p-4 shadow-lg transition duration-300 transform hover:scale-110
+    text-mediumLight bg-primary border-2 border-mediumLight rounded-full
+}
+
+.style-svg {
+    animation: rotate 0.3s ease 5 alternate;
+    animation-delay: 16s;
+}

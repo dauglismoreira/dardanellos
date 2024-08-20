@@ -7,7 +7,7 @@ import useScreenSize from '../../hooks/useScreenSize';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
-export const EntepriseContactCta = ({data}:any) => {
+export const EntepriseContactCta = ({data, cta}:any) => {
     const {width, isLargeScreen} = useScreenSize(1024)
     const [showMenu, setShowMenu] = useState(false);
 
@@ -33,6 +33,11 @@ export const EntepriseContactCta = ({data}:any) => {
         };
     }, []);
 
+    const phone = cta.configs.find((config:any) => config.id === 5).phone;
+    const cleanedPhone = phone.replace(/\D/g, '');
+
+    const whatsappLink = `https://wa.me/55${cleanedPhone}`;
+
 
     return(
         <div className={`enteprise-contact-cta ${isLargeScreen && showMenu ? 'scroll' : 'mobile'}`} style={{right: `calc(${(width > 1260) ? ((width - 1260) / 2) : 0}px)`}}>
@@ -41,7 +46,7 @@ export const EntepriseContactCta = ({data}:any) => {
 
             <span className="container-buttons">
                 <PrimaryButton label="Tenho interesse" link="#contact" style="border-darda5 text-darda5 hover:bg-darda5 hover:text-dardaGray1"/>
-                <PrimaryButton label="Whatsapp" link="/" style="border-darda5 text-darda5 hover:bg-darda5 hover:text-dardaGray1"/>
+                <PrimaryButton label="Whatsapp" link={whatsappLink} target="_blank" style="border-darda5 text-darda5 hover:bg-darda5 hover:text-dardaGray1"/>
             </span>
 
             <Link href="#local"><span className="action-local"><IoIosPin /></span></Link>

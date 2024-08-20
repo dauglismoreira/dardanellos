@@ -5,12 +5,13 @@ interface PrimaryButtonProps{
     style?:string;
     label:string;
     link:string;
+    target?:string;
 }
 
-export const PrimaryButton = ({style, label, link}: PrimaryButtonProps) => {
+export const PrimaryButton = ({style, label, link, target = '_parent'}: PrimaryButtonProps) => {
     return(
         <>
-            <Link href={link}><button className={`primary-button ${style ? style : ''}`}>{label}</button></Link>
+            <Link target={target} href={link}><button className={`primary-button ${style ? style : ''}`}>{label}</button></Link>
         </>
     )
 }

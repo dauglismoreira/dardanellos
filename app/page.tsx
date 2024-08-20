@@ -37,7 +37,7 @@ export default async function Home() {
      <HomeAbout image={data.page.components[3]} data={data.page.components[4]}/>
      <HomeOppBanner data={data.page.components[5]}/>
 
-     <StickActions/>
+     <StickActions data={data.configs.find((configs:any) => configs.id === 2)}/>
     </main>
   );
 }

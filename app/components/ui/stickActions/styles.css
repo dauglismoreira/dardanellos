@@ -16,7 +16,7 @@
     }
 }
 
-.stick-actions .stick-option:nth-child(3){
+.stick-actions a:nth-child(3) .stick-option{
     @apply
     border-none
 }

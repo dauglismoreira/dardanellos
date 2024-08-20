@@ -31,6 +31,7 @@ export async function generateMetadata(context:any) {
 export default async function Enterprise(context:any){
     const data = await  fetchData('product/' + context?.params.slug)
     const products = await fetchData('product')
+    const configs = await fetchData('page/1')
 
     return(
         <div className="enterprise">
@@ -45,7 +46,7 @@ export default async function Enterprise(context:any){
                 <img src="/enterprise-detail.png"/>
             </span>
 
-            <EntepriseContactCta data={data}/>
+            <EntepriseContactCta data={data} cta={configs.configs.find((configs:any) => configs.id === 2)}/>
 
             <div className="enterprise-content" id="about">
 
