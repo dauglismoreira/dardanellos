@@ -5,7 +5,7 @@
 
 .enterprise-catalog .enterprise-filters{
     @apply
-    flex gap-8 mb-8
+    flex gap-8 mb-8 flex-col lg:flex-row
 }
 
 .enterprise-catalog .enterprise-filters label{
@@ -15,13 +15,13 @@
 
 .enterprise-catalog .enterprise-filters .select-filter-container{
     @apply
-    w-[300px] border rounded-lg border-darda4 pl-1 pr-2
+    w-[300px] border rounded-lg border-darda4 relative
 }
 
-.enterprise-catalog .enterprise-filters .select-filter-container select{
+/* .enterprise-catalog .enterprise-filters .select-filter-container select{
     @apply
     w-full bg-transparent outline-none h-[48px] text-lg
-}
+} */
 
 .enterprise-catalog .enterprise-result{
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));

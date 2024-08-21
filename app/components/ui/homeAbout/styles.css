@@ -20,7 +20,7 @@
 
 .home-about .home-about-body .home-about-detail{
     @apply
-    absolute -translate-y-3/4 top-0
+    absolute -translate-y-3/4 top-0 w-full
 }
 
 .home-about .home-about-body .home-about-content{

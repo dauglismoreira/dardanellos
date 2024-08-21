@@ -1,5 +1,6 @@
 import fetchData from '../components/helpers/fetchData';
 import getStorageFile from '../components/helpers/getStorageFile';
+import { StickActions } from '../components/ui/stickActions';
 import './styles.css';
 
 export async function generateMetadata() {
@@ -33,6 +34,8 @@ export default async function Policy(){
             <div className="policy-content">
                 {data.page.components[0]?.long_text_pt_br && <div className="text" dangerouslySetInnerHTML={{__html: data.page.components[0].long_text_pt_br}}/>}
             </div>
+
+            <StickActions data={data.configs.find((configs:any) => configs.id === 2)}/>
         </div>
     )
 }

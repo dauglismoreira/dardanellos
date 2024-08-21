@@ -5,17 +5,17 @@
 
 .about-page .about-detail-1{
     @apply
-    absolute -right-[100px] lg:-right-[260px] top-[25%] lg:top-[45%] -translate-y-2/4 w-[240px] lg:w-auto
+    absolute -right-[100px] lg:-right-[200px] xl:-right-[260px] top-[25%] lg:top-[15%] xl:top-[45%] -translate-y-2/4 w-[240px] lg:w-[560px] xl:w-auto
 }
 
 .about-page .about-detail-2{
     @apply
-    absolute top-[45%] -translate-y-2/4
+    absolute top-[45%] -translate-y-2/4 w-full
 }
 
 .about-page .about-detail-3{
     @apply
-    absolute -left-[80px] lg:-left-[360px] top-[12%] lg:top-[27%] -translate-y-2/4 w-[240px] lg:w-auto z-10 lg:z-0
+    absolute -left-[80px] lg:-left-[360px] top-[12%] lg:top-[27%] -translate-y-2/4 w-[240px] lg:w-auto z-10 lg:z-0 hidden xl:block
 }
 
 .about-page.video-section{
@@ -113,10 +113,10 @@
     flex items-center gap-4 pt-6 lg:pt-[64px] border-b lg:border-none border-darda1 pb-4 lg:pb-0 w-fit lg:w-auto
 }
 
-.about-page .about-section-3 .section-3-content .section-3-item img{
+/* .about-page .about-section-3 .section-3-content .section-3-item img{
     @apply
     hidden lg:block
-}
+} */
 
 .about-page .about-section-3 .section-3-content .section-3-item span{
     @apply

@@ -1,6 +1,6 @@
 .enterprise-anchor-menu{
     @apply
-    bg-dardaGray1 w-full h-[48px] fixed z-30 top-[76px] lg:top-[120px] left-0 border-b border-dardaGray2
+    bg-dardaGray1 w-full h-[48px] fixed z-30 top-[56px] lg:top-[76px] left-0 border-b border-dardaGray2
 }
 
 .enterprise-anchor-menu ul{

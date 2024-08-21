@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import ImpacteIcon from '@/app/components/ui/impacte/impacteIcon';
 import './styles.css';
+import { Icon } from '../ui/icon';
 
 interface FooterProps{
     data:any;
@@ -14,7 +15,7 @@ export const Footer = ({data}: FooterProps) => {
         <div className="footer">
             <div className="footer-content">
                 <div className="footer-content-slogan">
-                    <img src="/icons/icon3.png"></img>
+                    <Icon color="fill-darda3" deskW={75} deskH={64} mobileW={28} mobileH={24}/>
                     <h5>{infos.find((info:any) => info.id === 8)?.name_pt_br}</h5>
                 </div>
                 <div className="footer-content-nav">

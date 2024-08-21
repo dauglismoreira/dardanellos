@@ -9,6 +9,11 @@
     .home-enterprise .home-enterprise-content{
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }
+
+    .home-enterprise .home-enterprise-content a{
+        @apply
+        w-full
+    }
 }
 
 .home-enterprise .home-enterprise-title{

@@ -5,7 +5,7 @@
 
 .enterprise .enterprise-banner{
     @apply
-    lg:h-[800px] h-[162px] w-full
+    lg:h-[800px] h-[162px] w-full relative z-10
 }
 
 .enterprise .enterprise-banner img{

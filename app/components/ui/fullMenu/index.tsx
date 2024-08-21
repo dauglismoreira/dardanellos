@@ -1,6 +1,7 @@
 import { IoClose } from 'react-icons/io5';
 import './styles.css';
 import Link from 'next/link';
+import { Icon } from '../icon';
 
 interface FullMenuProps{
     open:boolean;
@@ -15,15 +16,15 @@ export const FullMenu = ({open, onClose, menu, social}: FullMenuProps) => {
             <span className="full-menu-close" onClick={onClose}><IoClose /></span>
 
             <div className="full-menu-items">
-                <img src="/icons/icon5.png"/>
+                <Icon color="fill-darda1" deskW={65.66} deskH={56} mobileW={65.66} mobileH={56}/>
                 <ul>
-                    <Link href={menu.find((conf:any) => conf.id === 1).link || ''}>
+                    <Link onClick={onClose} href={menu.find((conf:any) => conf.id === 1).link || ''}>
                         <li>{menu.find((conf:any) => conf.id === 1).name_pt_br}</li>
                     </Link>
-                    <Link href={menu.find((conf:any) => conf.id === 2).link || ''}>
+                    <Link onClick={onClose} href={menu.find((conf:any) => conf.id === 2).link || ''}>
                         <li>{menu.find((conf:any) => conf.id === 2).name_pt_br}</li>
                     </Link>
-                    <Link href={menu.find((conf:any) => conf.id === 3).link || ''}>
+                    <Link onClick={onClose} href={menu.find((conf:any) => conf.id === 3).link || ''}>
                         <li>{menu.find((conf:any) => conf.id === 3).name_pt_br}</li>
                     </Link>
                 </ul>
@@ -32,7 +33,7 @@ export const FullMenu = ({open, onClose, menu, social}: FullMenuProps) => {
                 <ul>
                     {social.find((info:any) => info.id === 10)?.enumeration.items.length > 0 &&
                         social.find((info:any) => info.id === 10)?.enumeration.items.map((item:any, index:number) => (
-                        <Link key={index} href={item.link || ''}><li>{item.name_pt_br}</li></Link>
+                        <Link onClick={onClose} key={index} href={item.link || ''}><li>{item.name_pt_br}</li></Link>
                     ))}
                 </ul>
             </div>

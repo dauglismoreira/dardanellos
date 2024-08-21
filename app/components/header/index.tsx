@@ -12,10 +12,27 @@ import { FullMenu } from '../ui/fullMenu';
 export const Header = ({data}:any) => {
     const [openSearch, setOpenSearch] = useState(false)
     const [openMenu, setOpenMenu] = useState(false)
+    const [scrolled, setScrolled] = useState(false)
 
     const cta = data.find((config:any) => config.id === 1)?.configs.find((conf:any) => conf.id === 4);
     const menu = data.find((config:any) => config.id === 1)?.configs;
     const social = data.find((config:any) => config.id === 3)?.configs;
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 100) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     useEffect(() => {
         if (openSearch || openMenu) {
@@ -31,10 +48,10 @@ export const Header = ({data}:any) => {
 
     return(
         <>
-        <div className="header">
+        <div className={`header ${scrolled || openSearch ? 'scrolled' : ''}`}>
             <div className="header-menu">
                 <div className="header-menu-content">
-                    <Link href="/"><img src="/logo1.png"/></Link>
+                    <Link href="/"><img src="/logo.svg"/></Link>
                     <ul className="hidden lg:flex">
                         <Link href={menu.find((conf:any) => conf.id === 1).link || ''}>
                             <li>{menu.find((conf:any) => conf.id === 1).name_pt_br}</li>

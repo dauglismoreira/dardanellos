@@ -1,24 +1,30 @@
 .stick-actions{
     @apply
-    fixed z-40 right-[20px] left-[20px] md:left-auto bottom-[20px] md:bottom-auto md:top-2/4 md:-translate-y-2/4 w-auto md:w-[80px] bg-darda4 rounded-xl
-    flex flex-row md:flex-col
+    fixed z-40 right-[15px] left-[15px] md:left-auto bottom-[20px] md:bottom-auto md:top-2/4 md:-translate-y-2/4 w-auto md:w-[80px] bg-darda4 rounded-xl
+    flex flex-row md:flex-col border-darda5 border
+}
+
+
+.stick-actions a{
+    @apply
+    md:border-b border-darda5 
 }
 
 .stick-actions .stick-option{
     @apply
-    md:border-b border-darda5 flex items-center justify-center h-[80px] text-xs flex-col text-dardaGray1 cursor-pointer gap-1
+    flex items-center justify-center h-[80px] text-[10px] flex-col text-dardaGray1 cursor-pointer gap-1
 }
 
 @media(max-width:768px){
-    .stick-actions .stick-option{
+    .stick-actions a{
         @apply
         flex-1 border-r
     }
 }
 
-.stick-actions a:nth-child(3) .stick-option{
+.stick-actions .no-border{
     @apply
-    border-none
+    border-transparent
 }
 
 .stick-actions .stick-option svg{

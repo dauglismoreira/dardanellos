@@ -1,5 +1,6 @@
 import fetchData from '../components/helpers/fetchData';
 import getStorageFile from '../components/helpers/getStorageFile';
+import { StickActions } from '../components/ui/stickActions';
 import './styles.css';
 
 export async function generateMetadata() {
@@ -62,6 +63,8 @@ export default async function ContactPage(){
                 <div className="map" dangerouslySetInnerHTML={{__html: att.find((info:any) => info.id === 13)?.description_pt_br}}/>
             }
         </div>
+
+        <StickActions data={data.configs.find((configs:any) => configs.id === 2)}/>
         </>
     )
 }

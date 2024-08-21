@@ -19,7 +19,7 @@ export const EntepriseContactCta = ({data, cta}:any) => {
 
             const distanceFromBottom = documentHeight - (scrollPosition + windowHeight);
 
-            if (scrollPosition > 700 && distanceFromBottom > 1200) {
+            if (scrollPosition > 600 && distanceFromBottom > 1200) {
                 setShowMenu(true);
             } else {
                 setShowMenu(false);
@@ -41,7 +41,7 @@ export const EntepriseContactCta = ({data, cta}:any) => {
 
     return(
         <div className={`enteprise-contact-cta ${isLargeScreen && showMenu ? 'scroll' : 'mobile'}`} style={{right: `calc(${(width > 1260) ? ((width - 1260) / 2) : 0}px)`}}>
-            {data.product.tag && <label className="tag">{data.product.tag.name_pt_br}</label>}
+            {data.product.tag && <div className="tag">{data.product.tag.name_pt_br}</div>}
             <h2>{data.product.name_pt_br}</h2>
 
             <span className="container-buttons">

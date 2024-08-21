@@ -27,7 +27,7 @@
 
 .contact-page .contact-page-content{
     @apply
-    flex gap-8 lg:gap-40 pb-8 lg:pb-20 flex-col lg:flex-row
+    flex gap-8 lg:gap-12 xl:gap-40 pb-8 lg:pb-20 flex-col lg:flex-row
 }
 
 @media(min-width:1024px){
@@ -68,5 +68,5 @@
 
 .contact-page .contact-page-content .contact-page-form iframe{
     @apply
-    w-full h-[1500px] lg:h-[1200px]
+    w-full h-[1500px] lg:h-[1200px] relative z-20
 }

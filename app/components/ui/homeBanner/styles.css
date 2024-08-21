@@ -25,7 +25,7 @@
 
 .home-banner .home-banner-body .home-banner-content label{
     @apply
-    text-darda2
+    text-darda2 mt-[35px] lg:mt-0
 }
 
 .home-banner .home-banner-body .home-banner-content h1{

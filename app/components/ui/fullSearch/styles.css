@@ -11,7 +11,7 @@
 
 .full-search .search-bar{
     @apply
-    py-20 max-w-[1260px] mx-auto flex gap-4 items-center
+    py-8 lg:py-20 max-w-[1260px] mx-auto flex gap-4 items-center
 }
 
 .full-search .search-bar span{

@@ -1,3 +1,8 @@
+.enterprise-list-page{
+    @apply
+    px-4 2xl:px-0
+}
+
 .enterprise-list-page .enterprise-list-title,
 .enterprise-list-page .enterprise-list-content{
     @apply

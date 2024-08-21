@@ -14,6 +14,8 @@ import Fancybox from '../../utils/fancybox';
 
 export const EnterpriseProgress = ({data, gallery}:any) => {
 
+    console.log(gallery)
+
     return(
         <div className="enterprise-progress"  id="progress">
             <div className="enterprise-progress-title">
@@ -36,6 +38,7 @@ export const EnterpriseProgress = ({data, gallery}:any) => {
 
             <div className="enterprise-progress-title mt-8">
                 <h5>Fotos da Obra</h5>
+                <h6 className="text-lg text-dardaGray5 font-normal">{gallery.name_pt_br}</h6>
             </div>
             <div className="progress-gallery">
                 <Swiper

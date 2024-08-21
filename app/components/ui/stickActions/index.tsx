@@ -26,7 +26,7 @@ export const StickActions = ({data}:any) => {
                 <MdOutlineMail />
                 <span>Mensagem</span>
             </div></Link>
-            <Link href={att}><div className="stick-option">
+            <Link href={att} className="no-border"><div className="stick-option">
                 <BsChatLeftText />
                 <span>Atendimento</span>
             </div></Link>

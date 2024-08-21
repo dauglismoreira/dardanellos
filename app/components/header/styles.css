@@ -3,14 +3,19 @@
     h-[76px] lg:h-[120px] w-full fixed top-0 left-0 flex justify-between bg-dardaGray1 z-40 border-b border-dardaGray2 items-center px-4 2xl:px-0
 }
 
+.header.scrolled{
+    @apply
+    h-[56px] lg:h-[76px]
+}
+
 .header .header-menu{
     @apply
-    flex justify-end w-3/4
+    flex w-full max-w-[1260px] mx-auto
 }
 
 .header .header-menu .header-menu-content{
     @apply
-    flex w-full max-w-[1100px] gap-8 xl:gap-24
+    flex w-full gap-8 xl:gap-24
 }
 
 .header .header-menu .header-menu-content img{
@@ -30,7 +35,7 @@
 
 .header .header-action{
     @apply
-    items-center h-full justify-end gap-4 w-1/4 pr-2 xl:pr-8
+    items-center h-full justify-end gap-6 right-4 xl:right-8 absolute
 }
 
 .header .header-action span{

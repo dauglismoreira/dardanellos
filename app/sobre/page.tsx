@@ -1,6 +1,8 @@
 import fetchData from '../components/helpers/fetchData';
 import getStorageFile from '../components/helpers/getStorageFile';
 import { EnterpriseCard } from '../components/ui/enterpriseCard';
+import { Icon } from '../components/ui/icon';
+import { StickActions } from '../components/ui/stickActions';
 import './styles.css';
 
 export async function generateMetadata() {
@@ -55,7 +57,7 @@ export default async function About(){
                 {section2.enumeration.items.map((item:any, index:number) => (
                     <div key={index}>
                         <div className="section-2-title">
-                            <img src="/icons/icon6.png"/>
+                            <Icon color="fill-darda1" deskW={30} deskH={24} mobileW={30} mobileH={24}/>
                             <span>{item.name_pt_br}</span>
                         </div>
                         <div className="section-2-body">
@@ -69,7 +71,7 @@ export default async function About(){
                 <div className="section-3-content">
                     {section3.enumeration.items.map((item:any, index:number) => (
                         <div key={index} className="section-3-item">
-                            <img src="/icons/icon6.png"/>
+                            <Icon color="fill-darda1" deskW={30} deskH={24} mobileW={30} mobileH={24}/>
                             <span>{item.name_pt_br}</span>
                         </div>
                     ))}
@@ -120,6 +122,8 @@ export default async function About(){
                 </div>
             </div>
         </div>
+
+        <StickActions data={data.configs.find((configs:any) => configs.id === 2)}/>
         </>
     )
 }

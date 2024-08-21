@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './styles.css';
 import { IoIosArrowForward } from 'react-icons/io';
 import fetchDataFilter from '../../helpers/fetchDataFilter';
@@ -17,7 +17,8 @@ export const FullSearch = ({open, onClose}: FullSearchProps) => {
     const [enterprises, setEnterprises] = useState<any[]>([])
     const [loading, setLoading] = useState(false)
 
-    const fetchDataFields = (fields: any) => {    
+    const fetchDataFields = (fields: any) => {
+        setLoading(true);
         fetchDataFilter('product', fields, 1)
           .then((data) => {
             setEnterprises(data.products.data);
@@ -29,6 +30,14 @@ export const FullSearch = ({open, onClose}: FullSearchProps) => {
           });
     };
 
+    useEffect(() => {
+        if (search.length > 2) {
+            fetchDataFields({ s: search });
+        } else if (search.length === 0) {
+            setEnterprises([]);
+        }
+    }, [search]);
+
     return(
         <div className={`full-search ${open ? 'active' : ''}`}>
             <div className="search-bar">
@@ -37,7 +46,7 @@ export const FullSearch = ({open, onClose}: FullSearchProps) => {
             </div>
             <div className="total-results">
                 {enterprises.length > 0 && <p>Encontramos {enterprises.length} {enterprises.length === 1 ? 'empreendimento.' : 'empreendimentos.'}</p>}
-                {(enterprises.length === 0 && search !== '') && <p>Não houveram resultados para sua busca.</p>}
+                {(enterprises.length === 0 && search !== '' && search.length > 2) && <p>Não houveram resultados para sua busca.</p>}
             </div>
             <div className="enterprises-result">
                 {enterprises.map((item, index) => (

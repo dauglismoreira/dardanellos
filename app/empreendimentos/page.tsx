@@ -1,6 +1,7 @@
 import fetchData from '../components/helpers/fetchData';
 import getStorageFile from '../components/helpers/getStorageFile';
 import { EnterpriseCatalog } from '../components/ui/enterpriseCatalog';
+import { StickActions } from '../components/ui/stickActions';
 import './styles.css';
 
 export async function generateMetadata() {
@@ -35,6 +36,8 @@ export default async function EnterpriseListPage(){
             <div className="enterprise-list-content">
                 <EnterpriseCatalog data={products}/>
             </div>
+
+            <StickActions data={data.configs.find((configs:any) => configs.id === 2)}/>
         </div>
     )
 }
