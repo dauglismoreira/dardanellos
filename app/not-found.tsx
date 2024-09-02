@@ -1,10 +1,11 @@
+import { Icon } from './components/ui/icon';
 import { PrimaryButton } from './components/ui/primaryButton';
 import './not-found.css';
 
 const NotFound = () => {
     return(
       <div className="not-found-container">
-        <img src="/icons/icon7.png"/>
+        <Icon color="fill-darda1" deskW={75.22} deskH={64} mobileW={37.61} mobileH={32}/>
         <h1>Erro 404</h1>
         <p>A página que você procura não foi encontrada.</p>
   

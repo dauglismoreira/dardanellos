@@ -15,7 +15,7 @@
 
 .enterprise-plants-gallery .enterprise-gallery-wrap .select-plant{
     @apply
-    pl-1 pr-2 border border-darda3 rounded-lg h-[48px] w-full lg:max-w-[200px]
+    pl-1 pr-2 border border-darda3 rounded-lg h-[48px] w-full lg:max-w-[320px] relative
 }
 
 .enterprise-plants-gallery .enterprise-gallery-wrap .select-plant select{
