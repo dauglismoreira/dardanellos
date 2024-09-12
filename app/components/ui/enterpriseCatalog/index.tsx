@@ -159,7 +159,7 @@ export const EnterpriseCatalog = ({ data }: any) => {
     return (
         <div className="enterprise-catalog">
             <div className="enterprise-filters">
-                <fieldset>
+                {/*<fieldset>
                     <label>Cidade</label>
                     <div className="select-filter-container">
                         <Listbox value={selectedCity} onChange={handleSelectCity}>
@@ -199,9 +199,9 @@ export const EnterpriseCatalog = ({ data }: any) => {
                             </ListboxOptions>
                         </Listbox>
                     </div>
-                </fieldset>
+                </fieldset>*/}
                 <fieldset>
-                    <label>Status da obra</label>
+                    <label>Status do empreendimento</label>
                     <div className="select-filter-container">
                         <Listbox value={selectedTag} onChange={handleSelectTag}>
                             <ListboxButton className={clsx(

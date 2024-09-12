@@ -13,9 +13,6 @@ import getStorageFile from '../../helpers/getStorageFile';
 import Fancybox from '../../utils/fancybox';
 
 export const EnterpriseProgress = ({data, gallery}:any) => {
-
-    console.log(gallery)
-
     return(
         <div className="enterprise-progress"  id="progress">
             <div className="enterprise-progress-title">
