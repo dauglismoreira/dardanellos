@@ -28,7 +28,6 @@ export default async function WorkPage(){
 
     const infos = data.configs.find((config:any) => config.name_pt_br === 'Rodapé')?.configs;
     const att = data.configs.find((config:any) => config.id === 4)?.configs;
-
     return(
         <>
         <div className="contact-page">
@@ -45,8 +44,8 @@ export default async function WorkPage(){
             </div>
             <div className="contact-page-content">
                 <div className="contact-page-form">
-                    {data.page.components.find((comp:any) => comp.id === 15) &&
-                        <div className="form" dangerouslySetInnerHTML={{__html: data.page.components.find((comp:any) => comp.id === 15)?.iframe}}/>
+                    {data.page.components.find((comp:any) => comp.id === 14) &&
+                        <div className="form" dangerouslySetInnerHTML={{__html: data.page.components.find((comp:any) => comp.id === 14)?.iframe}}/>
                     }
                 </div>
                 <div className="contact-page-info">
