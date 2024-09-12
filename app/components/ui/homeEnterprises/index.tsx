@@ -1,5 +1,6 @@
 import { EnterpriseCard } from '../enterpriseCard';
 import './styles.css';
+import Link from "next/link";
 
 interface HomeEnterpriseProps{
     data:any;
@@ -20,7 +21,7 @@ export const HomeEnterprise = ({data, products}:HomeEnterpriseProps) => {
             </div>
             <div className="view-more">
                 <span></span>
-                <div className="view-more-circle">Conheça mais</div>
+                <Link href="/empreendimentos" className="view-more-circle">Conheça mais</Link>
                 <span></span>
             </div>
         </div>
