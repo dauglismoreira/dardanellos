@@ -69,7 +69,7 @@ export const EnterprisePlantsGallery = ({data}: EnterprisePlantsGalleryProps) =>
                                 data-src={getStorageFile(data.find((items:any) => items.id == selectedPlant)?.src)}
                                 src={getStorageFile(data.find((items:any) => items.id == selectedPlant)?.src)}
                             />
-                            <span>clique para ampliar</span>
+                            <span className="pointer-events-none">clique na imagem para ampliar</span>
                         </Fancybox>
                     </div>
                 }
