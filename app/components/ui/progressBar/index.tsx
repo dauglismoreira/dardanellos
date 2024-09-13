@@ -36,7 +36,7 @@ export const ProgressBar = ({label, value, height}: ProgressBarProps) => {
                     className={height}
                     style={{ width: isVisible ? `${value}%` : '0%', transition: 'width 2s' }}
                 ></span>
-                <small>{value ? value : 0}%</small>
+              {value > 0 && <small className="bg-darda1 w-fit">{value}%</small>}
             </div>
         </div>
     )
