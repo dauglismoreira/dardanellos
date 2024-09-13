@@ -4,6 +4,8 @@ import "./globals.css";
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
 import fetchData from "./components/helpers/fetchData";
+import {GoogleTagManager} from '@next/third-parties/google'
+import {ReactNode} from "react";
 
 const rem = REM({ subsets: ["latin"] });
 
@@ -15,13 +17,14 @@ export const metadata: Metadata = {
 export default async function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   const data = await fetchData('page/1')
 
   return (
     <html lang="pt-BR">
       <body className={rem.className}>
+        <GoogleTagManager gtmId="GTM-PFW9DFTD"/>
         <Header data={data.configs}/>
         {children}
         <Footer data={data.configs}/>
