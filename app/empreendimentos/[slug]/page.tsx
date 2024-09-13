@@ -7,6 +7,7 @@ import { EnterpriseProgress } from '@/app/components/ui/enterpriseProgress';
 import { EnterpriseCard } from '@/app/components/ui/enterpriseCard';
 import { EnterpriseAnchorMenu } from '@/app/components/ui/enterpriseAnchorMenu';
 import { EntepriseContactCta } from '@/app/components/ui/entepriseContactCta';
+import Link from "next/link";
 
 export async function generateMetadata(context:any) {
     const data = await  fetchData('product/' + context?.params.slug)
@@ -149,7 +150,7 @@ export default async function Enterprise(context:any){
 
                 <div className="view-more">
                     <span></span>
-                    <div className="view-more-circle">Conheça mais</div>
+                    <Link href="/empreendimentos" className="view-more-circle">Conheça mais</Link>
                     <span></span>
                 </div>
             </div>

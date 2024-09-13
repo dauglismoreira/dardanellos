@@ -26,7 +26,7 @@ export const EnterpriseProgress = ({data, gallery}:any) => {
                 />
             </div>
             <div className="progress-bar-wrapper">
-                {data.items.slice(1, data.items.length).map((item:any, index:number) => (
+                {data.items.map((item:any, index:number) => index > 0 && (
                     <div className="progress-item" key={index} >
                         <ProgressBar label={item.name_pt_br} value={item.integer} height="h-[24px]"/>
                     </div>
