@@ -5,8 +5,9 @@ import { HomeEnterprise } from "./components/ui/homeEnterprises";
 import { HomeAbout } from "./components/ui/homeAbout";
 import { HomeOppBanner } from "./components/ui/homeOppBanner";
 import { StickActions } from "./components/ui/stickActions";
+import type { Metadata } from 'next'
 
-export async function generateMetadata() {
+export async function generateMetadata(): Promise<Metadata> {
   const data = await  fetchData('page/1')
 
   return {
