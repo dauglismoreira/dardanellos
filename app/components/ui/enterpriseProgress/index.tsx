@@ -20,13 +20,13 @@ export const EnterpriseProgress = ({data, gallery}:any) => {
             </div>
             <div className="progress-bar-high">
                 <ProgressBar
-                    label={data.items.find((items: any) => items.id === 39).name_pt_br}
-                    value={data.items.find((items: any) => items.id === 39).integer}
+                    label={data.items[0].name_pt_br}
+                    value={data.items[0].integer}
                     height="h-[32px]"
                 />
             </div>
             <div className="progress-bar-wrapper">
-                {data.items.filter((items: any) => items.id !== 39).map((item:any, index:number) => (
+                {data.items.slice(1, data.items.length).map((item:any, index:number) => (
                     <div className="progress-item" key={index} >
                         <ProgressBar label={item.name_pt_br} value={item.integer} height="h-[24px]"/>
                     </div>
