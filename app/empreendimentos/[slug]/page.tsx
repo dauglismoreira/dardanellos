@@ -74,7 +74,7 @@ export default async function Enterprise(context:any){
                 }
 
                 <div className="enterprise-high-image">
-                    <img src={data.product.vertical_image_id ? getStorageFile(data.product.vertical_image.src) : `/placeholder-dark.jpg`}/>
+                    <img src={data.product.square_image_id ? getStorageFile(data.product.square_image.src) : `/placeholder-dark.jpg`}/>
                 </div>
 
                 {data.product.structure?.items.length > 0 &&

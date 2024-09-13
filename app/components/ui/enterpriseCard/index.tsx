@@ -13,7 +13,7 @@ export const EnterpriseCard = ({data}: EnterpriseCardProps) => {
         <Link href={`/empreendimentos/${data.slug_pt_br}`}>
         <div className="enterprise-card">
             <div className="enterprise-card-cover">
-                <img className="enterprise-card-image" src={data.square_image_id ? getStorageFile(data.square_image.src) : '/placeholder-dark.jpg'}/>
+                <img className="enterprise-card-image" src={data.vertical_image_id ? getStorageFile(data.vertical_image.src) : '/placeholder-dark.jpg'}/>
                 {data.tag_id && <span className="enterprise-card-tag">{data.tag.name_pt_br}</span>}
             </div>
             <div className="enterprise-card-info">
