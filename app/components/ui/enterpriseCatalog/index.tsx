@@ -220,7 +220,7 @@ export const EnterpriseCatalog = ({ data }: any) => {
                                 <ListboxOption key="" value="">
                                     {({ selected }) => (
                                         <>
-                                            <span className={`block truncate text-lg text-darda4 px-4 ${selected ? 'font-semibold' : 'font-normal'}`}>
+                                            <span className={`block truncate text-lg text-darda4 hover:text-dardaGray1 hover:bg-darda4 cursor-pointer px-4 ${selected ? 'font-semibold' : 'font-normal'}`}>
                                                 Todos status
                                             </span>
                                         </>

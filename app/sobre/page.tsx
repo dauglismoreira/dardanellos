@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import fetchData from '../components/helpers/fetchData';
 import getStorageFile from '../components/helpers/getStorageFile';
 import { EnterpriseCard } from '../components/ui/enterpriseCard';
@@ -114,11 +115,11 @@ export default async function About(){
                     ))}
                 </div>
                 <div className="section-7-action">
-                    <div className="view-more">
+                    <Link href="/empreendimentos" className="view-more">
                         <span></span>
                         <div className="view-more-circle">Conheça mais</div>
                         <span></span>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>
